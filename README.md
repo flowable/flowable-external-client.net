@@ -21,13 +21,20 @@ Currently, it's a basic wrapper for the REST API's without any further services.
 
 ```csharp
 var auth = new AuthenticationHeaderValue("Bearer", "<personal-access-token>");
-var flowableExternalWorkerRestClient = new FlowableExternalWorkerRestClient("https://cloud.flowable.com/work", "test-worker", auth);
 
-var acquireJobs = flowableExternalWorkerRestClient.AcquireJobs("testTopic", "PT5M").Result;
+var externalWorkerClient = new ExternalWorkerClient(authentication: auth);
+var subscription = externalWorkerClient.Subscribe("myTopic", new HandleJobs());
 
-if (acquireJobs.Count > 0)
+// ...
+
+class HandleJobs : IExternalWorkerCallbackHandler
 {
-    var jobId = acquireJobs[0].Id;
-    flowableExternalWorkerRestClient.CompleteJob(jobId);
+    public IWorkResult Handle(ExternalWorkerAcquireJobResponse job, IWorkResultBuilder work)
+    {
+        Console.WriteLine("Handle job: " + job.Id);
+        return work
+            .Success()
+            .Variable("testVar", "Hello from C#");
+    }
 }
 ```

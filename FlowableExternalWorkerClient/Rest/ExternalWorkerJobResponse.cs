@@ -1,4 +1,4 @@
-namespace FlowableExternalWorkerClient;
+namespace FlowableExternalWorkerClient.Rest;
 
 public class ExternalWorkerJobResponse
 {

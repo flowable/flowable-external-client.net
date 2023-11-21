@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
-namespace FlowableExternalWorkerClient;
+namespace FlowableExternalWorkerClient.Rest;
 
 public class FlowableExternalWorkerRestClient : IFlowableExternalWorkerRestClient
 {
