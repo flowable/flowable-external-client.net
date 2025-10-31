@@ -4,6 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-    </PropertyGroup>
 
+        <PackageId>Flowable.ExternalWorkerClient</PackageId>
+        <Company>Flowable</Company>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/flowable/flowable-external-client.net</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
 </Project>
