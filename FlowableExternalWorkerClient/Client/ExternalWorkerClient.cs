@@ -9,7 +9,7 @@ public class ExternalWorkerClient : IExternalWorkerClient
     private FlowableExternalWorkerRestClient _flowableExternalWorkerRestClient;
 
     public ExternalWorkerClient(
-        string flowableHost = "https://cloud.flowable.com/work",
+        string flowableHost = "https://trial.flowable.com/work",
         string? workerId = null,
         AuthenticationHeaderValue? authentication = null,
         IHttpClientCustomizer? customizer = null
