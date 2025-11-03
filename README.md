@@ -1,8 +1,9 @@
 # Flowable External Worker Library for .NET
 
 
-[License:
-![license](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/flowable/flowable-external-client.net/blob/main/LICENSE)
+[![Latest Version](https://img.shields.io/nuget/v/Flowable.ExternalWorkerClient.svg)](https://www.nuget.org/packages/Flowable.ExternalWorkerClient)
+[![License](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/flowable/flowable-external-client.net/blob/main/LICENSE)
+
 
 ![Flowable Actions CI](https://github.com/flowable/flowable-external-client.net/actions/workflows/main.yml/badge.svg?branch=main)
 
