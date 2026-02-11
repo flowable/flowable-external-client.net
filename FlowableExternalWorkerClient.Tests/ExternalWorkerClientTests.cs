@@ -15,33 +15,44 @@ public class ExternalWorkerClientTests
 
     private string FixturesPath => Path.Combine(AppContext.BaseDirectory, "Fixtures");
 
-    private ExternalWorkerAcquireJobResponse ConsumeOneCall(
+    /// <summary>
+    /// Subscribes to a topic, waits for a single job to be processed (including the
+    /// work result's Execute call), and returns the job. Uses an ExecutionAwareWorkResult
+    /// wrapper to properly await the subscription's async work, avoiding static delays.
+    /// </summary>
+    private async Task<ExternalWorkerAcquireJobResponse> ConsumeOneCallAsync(
         ExternalWorkerClient client,
         Func<ExternalWorkerAcquireJobResponse, IWorkResultBuilder, IWorkResult?> callbackHandler,
         string topic = "myTopic")
     {
         ExternalWorkerAcquireJobResponse? resultJob = null;
-        var completed = false;
+        var executionCompleted = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
 
         var handler = new DelegateCallbackHandler((job, work) =>
         {
             var result = callbackHandler(job, work);
             resultJob = job;
-            completed = true;
-            return result;
+            if (result == null)
+            {
+                executionCompleted.TrySetResult(true);
+                return null;
+            }
+            return new ExecutionAwareWorkResult(result, executionCompleted);
         });
 
         var subscription = client.Subscribe(topic, handler, waitPeriodSeconds: 1);
 
-        var attempts = 0;
-        while (attempts < 50 && !completed)
+        try
         {
-            Thread.Sleep(200);
-            attempts++;
+            await executionCompleted.Task.WaitAsync(TimeSpan.FromSeconds(10));
+        }
+        catch (TimeoutException)
+        {
+            subscription.Unsubscribe();
+            Assert.Fail("Callback was not invoked or execution did not complete within the timeout period");
         }
 
         subscription.Unsubscribe();
-        Assert.True(completed, "Callback was not invoked within the timeout period");
         return resultJob!;
     }
 
@@ -59,7 +70,7 @@ public class ExternalWorkerClientTests
         var processInstanceId = await BpmnUtils.StartProcess(httpClient, BaseUrl, definitionId);
         try
         {
-            ConsumeOneCall(client, (job, work) => work.Success());
+            await ConsumeOneCallAsync(client, (job, work) => work.Success());
 
             var activityIds = await BpmnUtils.ExecutedActivityIds(httpClient, BaseUrl, processInstanceId);
             Assert.Equal(
@@ -90,16 +101,13 @@ public class ExternalWorkerClientTests
         var processInstanceId = await BpmnUtils.StartProcess(httpClient, BaseUrl, definitionId);
         try
         {
-            ConsumeOneCall(client, (job, work) =>
+            await ConsumeOneCallAsync(client, (job, work) =>
                 work.Failure()
                     .ErrorMessage("Test Error Message")
                     .ErrorDetails("Some error details")
                     .Retries(3)
                     .RetryTimeout("PT5M")
             );
-
-            // Give the server a moment to process
-            if (!cassette.IsReplaying) await Task.Delay(500);
 
             var activityIds = await BpmnUtils.ExecutedActivityIds(httpClient, BaseUrl, processInstanceId);
             Assert.Equal(
@@ -128,14 +136,11 @@ public class ExternalWorkerClientTests
         var caseInstanceId = await CmmnUtils.StartCase(httpClient, BaseUrl, definitionId);
         try
         {
-            ConsumeOneCall(
+            await ConsumeOneCallAsync(
                 client,
                 (job, work) => work.CmmnTerminate().Variable("testVar", "test terminate"),
                 topic: "cmmnTopic"
             );
-
-            // Give the server a moment to process
-            if (!cassette.IsReplaying) await Task.Delay(500);
 
             var variable = await CmmnUtils.GetCaseVariable(httpClient, BaseUrl, caseInstanceId, "testVar");
             Assert.NotNull(variable);
@@ -163,14 +168,11 @@ public class ExternalWorkerClientTests
         var processInstanceId = await BpmnUtils.StartProcess(httpClient, BaseUrl, definitionId);
         try
         {
-            ConsumeOneCall(client, (job, work) =>
+            await ConsumeOneCallAsync(client, (job, work) =>
                 work.BpmnError()
                     .Variable("testVar", "test failure")
                     .ErrorCode("errorCode1")
             );
-
-            // Give the server a moment to process
-            if (!cassette.IsReplaying) await Task.Delay(500);
 
             var variable =
                 await BpmnUtils.GetProcessVariable(httpClient, BaseUrl, processInstanceId, "testVar");
@@ -207,6 +209,37 @@ public class ExternalWorkerClientTests
         public IWorkResult? Handle(ExternalWorkerAcquireJobResponse job, IWorkResultBuilder work)
         {
             return _handler(job, work);
+        }
+    }
+
+    /// <summary>
+    /// Wraps an IWorkResult to signal a TaskCompletionSource when Execute completes.
+    /// This lets ConsumeOneCallAsync wait for the subscription's async work to finish
+    /// instead of using a static delay.
+    /// </summary>
+    private class ExecutionAwareWorkResult : IWorkResult
+    {
+        private readonly IWorkResult _inner;
+        private readonly TaskCompletionSource<bool> _tcs;
+
+        public ExecutionAwareWorkResult(IWorkResult inner, TaskCompletionSource<bool> tcs)
+        {
+            _inner = inner;
+            _tcs = tcs;
+        }
+
+        public async Task Execute(IFlowableExternalWorkerRestClient client)
+        {
+            try
+            {
+                await _inner.Execute(client);
+                _tcs.TrySetResult(true);
+            }
+            catch (Exception ex)
+            {
+                _tcs.TrySetException(ex);
+                throw;
+            }
         }
     }
 }
