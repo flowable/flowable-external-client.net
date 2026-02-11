@@ -41,6 +41,24 @@ public class FlowableExternalWorkerRestClient : IFlowableExternalWorkerRestClien
         _workerId = workerId;
     }
 
+    public FlowableExternalWorkerRestClient(
+        string flowableHost,
+        string workerId,
+        HttpClient httpClient,
+        IHttpClientCustomizer? customizer = null
+    )
+    {
+        _httpClient = httpClient;
+
+        if (customizer != null)
+        {
+            customizer.Customize(_httpClient);
+        }
+
+        _flowableHost = flowableHost;
+        _workerId = workerId;
+    }
+
     public async Task<Page<ExternalWorkerJobResponse>> ListJobs()
     {
         var response = await _httpClient.GetStreamAsync(_flowableHost + _jobApi + "/jobs");

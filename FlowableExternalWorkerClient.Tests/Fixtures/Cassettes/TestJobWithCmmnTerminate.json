@@ -1,0 +1,224 @@
+[
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/cmmn-api/cmmn-repository/deployments",
+    "statusCode": 201,
+    "responseBody": "eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9jbW1uLWFwaS9jbW1uLXJlcG9zaXRvcnkvZGVwbG95bWVudHMvQ0FTLTQwZjFlZmNiLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImNhdGVnb3J5IjpudWxsLCJkZXBsb3ltZW50VGltZSI6IjIwMjYtMDItMTFUMTY6MDM6NDkuNzk1WiIsImlkIjoiQ0FTLTQwZjFlZmNiLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsIm5hbWUiOiJleHRlcm5hbFdvcmtlckNhc2UiLCJwYXJlbnREZXBsb3ltZW50SWQiOiJDQVMtNDBmMWVmY2ItMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwidGVuYW50SWQiOiIifQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "Set-Cookie": [
+        "XSRF-TOKEN=4f4ddcee-00a4-4c6f-8445-d0d1c85ada0e; Path=/flowable-work"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:49 GMT"
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "uri": "http://localhost:8090/flowable-work/cmmn-api/cmmn-repository/case-definitions?deploymentId=CAS-40f1efcb-0763-11f1-917b-2edfee439de1",
+    "statusCode": 200,
+    "responseBody": "eyJkYXRhIjpbeyJjYXRlZ29yeSI6Imh0dHA6Ly9mbG93YWJsZS5vcmcvY21tbiIsImRlcGxveW1lbnRJZCI6IkNBUy00MGYxZWZjYi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJkZXBsb3ltZW50VXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvY21tbi1hcGkvY21tbi1yZXBvc2l0b3J5L2RlcGxveW1lbnRzL0NBUy00MGYxZWZjYi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJkZXNjcmlwdGlvbiI6bnVsbCwiZGlhZ3JhbVJlc291cmNlIjpudWxsLCJncmFwaGljYWxOb3RhdGlvbkRlZmluZWQiOnRydWUsImlkIjoiQ0FTLTQwZjM0ZjVkLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImtleSI6ImV4dGVybmFsV29ya2VyQ2FzZSIsIm5hbWUiOiJFeHRlcm5hbCBXb3JrZXIgQ2FzZSIsInJlc291cmNlIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvY21tbi1hcGkvY21tbi1yZXBvc2l0b3J5L2RlcGxveW1lbnRzL0NBUy00MGYxZWZjYi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEvcmVzb3VyY2VzL2V4dGVybmFsV29ya2VyQ2FzZS5jbW1uIiwic3RhcnRGb3JtRGVmaW5lZCI6ZmFsc2UsInRlbmFudElkIjoiIiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvY21tbi1hcGkvY21tbi1yZXBvc2l0b3J5L2Nhc2UtZGVmaW5pdGlvbnMvQ0FTLTQwZjM0ZjVkLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInZlcnNpb24iOjF9XSwib3JkZXIiOiJhc2MiLCJzaXplIjoxLCJzb3J0IjoibmFtZSIsInN0YXJ0IjowLCJ0b3RhbCI6MX0=",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:49 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/cmmn-api/cmmn-runtime/case-instances",
+    "statusCode": 201,
+    "responseBody": "eyJidXNpbmVzc0tleSI6bnVsbCwiYnVzaW5lc3NTdGF0dXMiOm51bGwsImNhbGxiYWNrSWQiOm51bGwsImNhbGxiYWNrVHlwZSI6bnVsbCwiY2FzZURlZmluaXRpb25EZXNjcmlwdGlvbiI6bnVsbCwiY2FzZURlZmluaXRpb25JZCI6IkNBUy00MGYzNGY1ZC0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJjYXNlRGVmaW5pdGlvbk5hbWUiOiJFeHRlcm5hbCBXb3JrZXIgQ2FzZSIsImNhc2VEZWZpbml0aW9uVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvY21tbi1hcGkvY21tbi1yZXBvc2l0b3J5L2Nhc2UtZGVmaW5pdGlvbnMvQ0FTLTQwZjM0ZjVkLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImNvbXBsZXRlZCI6ZmFsc2UsImVuZGVkIjpmYWxzZSwiaWQiOiJDQVMtNDEwZTAzNGYtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwibmFtZSI6bnVsbCwicGFyZW50SWQiOm51bGwsInJlZmVyZW5jZUlkIjpudWxsLCJyZWZlcmVuY2VUeXBlIjpudWxsLCJzdGFydFRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ5Ljk3OVoiLCJzdGFydFVzZXJJZCI6ImFkbWluIiwic3RhdGUiOiJhY3RpdmUiLCJ0ZW5hbnRJZCI6IiIsInVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL2NtbW4tYXBpL2NtbW4tcnVudGltZS9jYXNlLWluc3RhbmNlcy9DQVMtNDEwZTAzNGYtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwidmFyaWFibGVzIjpbeyJuYW1lIjoiaW5pdGlhdG9yIiwic2NvcGUiOiJsb2NhbCIsInR5cGUiOiJzdHJpbmciLCJ2YWx1ZSI6ImFkbWluIn1dfQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:50 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/external-job-api/acquire/jobs",
+    "statusCode": 200,
+    "responseBody": "W3siY29ycmVsYXRpb25JZCI6IjQxMTAyNjM1LTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImNyZWF0ZVRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ5Ljk5M1oiLCJkdWVEYXRlIjpudWxsLCJlbGVtZW50SWQiOiJjbW1uVGFza18xIiwiZWxlbWVudE5hbWUiOiJFeHRlcm5hbCBXb3JrZXIgdGFzayIsImV4Y2VwdGlvbk1lc3NhZ2UiOm51bGwsImV4ZWN1dGlvbklkIjpudWxsLCJpZCI6IkpPQi00MTEwMjYzNi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJsb2NrRXhwaXJhdGlvblRpbWUiOiIyMDI2LTAyLTExVDE2OjA0OjAwLjA4N1oiLCJsb2NrT3duZXIiOiJ0ZXN0LXdvcmtlciIsInByb2Nlc3NEZWZpbml0aW9uSWQiOm51bGwsInByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJyZXRyaWVzIjozLCJzY29wZURlZmluaXRpb25JZCI6IkNBUy00MGYzNGY1ZC0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJzY29wZUlkIjoiQ0FTLTQxMGUwMzRmLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInNjb3BlVHlwZSI6ImNtbW4iLCJzdWJTY29wZUlkIjoiQ0FTLTQxMGY4OWY0LTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInRlbmFudElkIjoiIiwidXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvZXh0ZXJuYWwtam9iLWFwaS9qb2JzL0pPQi00MTEwMjYzNi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJ2YXJpYWJsZXMiOlt7Im5hbWUiOiJpbml0aWF0b3IiLCJ0eXBlIjoic3RyaW5nIiwidmFsdWUiOiJhZG1pbiJ9XX1d",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:50 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/external-job-api/acquire/jobs/JOB-41102636-0763-11f1-917b-2edfee439de1/cmmnTerminate",
+    "statusCode": 204,
+    "responseBody": "",
+    "responseContentType": null,
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:50 GMT"
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "uri": "http://localhost:8090/flowable-work/cmmn-api/cmmn-history/historic-variable-instances?caseInstanceId=CAS-410e034f-0763-11f1-917b-2edfee439de1\u0026variableName=testVar",
+    "statusCode": 200,
+    "responseBody": "eyJkYXRhIjpbeyJjYXNlSW5zdGFuY2VJZCI6IkNBUy00MTBlMDM0Zi0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJjYXNlSW5zdGFuY2VVcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9jbW1uLWFwaS9jbW1uLWhpc3RvcnkvaGlzdG9yaWMtY2FzZS1pbnN0YW5jZXMvQ0FTLTQxMGUwMzRmLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImlkIjoiVkFSLTQxMmQyNDFhLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInBsYW5JdGVtSW5zdGFuY2VJZCI6bnVsbCwidGFza0lkIjpudWxsLCJ2YXJpYWJsZSI6eyJuYW1lIjoidGVzdFZhciIsInNjb3BlIjoiZ2xvYmFsIiwidHlwZSI6InN0cmluZyIsInZhbHVlIjoidGVzdCB0ZXJtaW5hdGUifX1dLCJvcmRlciI6ImFzYyIsInNpemUiOjEsInNvcnQiOiJ2YXJpYWJsZU5hbWUiLCJzdGFydCI6MCwidG90YWwiOjF9",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:50 GMT"
+      ]
+    }
+  },
+  {
+    "method": "DELETE",
+    "uri": "http://localhost:8090/flowable-work/cmmn-api/cmmn-repository/deployments/CAS-40f1efcb-0763-11f1-917b-2edfee439de1",
+    "statusCode": 204,
+    "responseBody": "",
+    "responseContentType": null,
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:50 GMT"
+      ]
+    }
+  }
+]
