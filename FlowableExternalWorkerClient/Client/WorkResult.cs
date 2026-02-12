@@ -40,25 +40,25 @@ public class WorkResultFailure : IWorkResult
         _jobId = job.Id;
     }
 
-    WorkResultFailure ErrorMessage(string errorMessage)
+    public WorkResultFailure ErrorMessage(string errorMessage)
     {
         _errorMessage = errorMessage;
         return this;
     }
 
-    WorkResultFailure ErrorDetails(string errorDetails)
+    public WorkResultFailure ErrorDetails(string errorDetails)
     {
         _errorDetails = errorDetails;
         return this;
     }
 
-    WorkResultFailure Retries(int retries)
+    public WorkResultFailure Retries(int retries)
     {
         _retries = retries;
         return this;
     }
 
-    WorkResultFailure RetryTimeout(string retryTimeout)
+    public WorkResultFailure RetryTimeout(string retryTimeout)
     {
         _retryTimeout = retryTimeout;
         return this;

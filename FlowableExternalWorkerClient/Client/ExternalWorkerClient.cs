@@ -23,6 +23,19 @@ public class ExternalWorkerClient : IExternalWorkerClient
         );
     }
 
+    public ExternalWorkerClient(
+        string flowableHost,
+        string workerId,
+        HttpClient httpClient
+    )
+    {
+        _flowableExternalWorkerRestClient = new FlowableExternalWorkerRestClient(
+            flowableHost,
+            workerId,
+            httpClient
+        );
+    }
+
     public IExternalWorkerSubscription Subscribe(
         string topic,
         IExternalWorkerCallbackHandler callbackHandler,

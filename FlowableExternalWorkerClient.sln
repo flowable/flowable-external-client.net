@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowableExternalWorkerClient", "FlowableExternalWorkerClient\FlowableExternalWorkerClient.csproj", "{8BF2F4EF-0DE1-4F68-AB1A-7DAB7DB4F2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowableExternalWorkerClient.Tests", "FlowableExternalWorkerClient.Tests\FlowableExternalWorkerClient.Tests.csproj", "{4E66CBDA-5482-4977-9F60-5D6DD71EEB31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +15,9 @@ Global
 		{8BF2F4EF-0DE1-4F68-AB1A-7DAB7DB4F2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF2F4EF-0DE1-4F68-AB1A-7DAB7DB4F2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BF2F4EF-0DE1-4F68-AB1A-7DAB7DB4F2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E66CBDA-5482-4977-9F60-5D6DD71EEB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E66CBDA-5482-4977-9F60-5D6DD71EEB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E66CBDA-5482-4977-9F60-5D6DD71EEB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E66CBDA-5482-4977-9F60-5D6DD71EEB31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

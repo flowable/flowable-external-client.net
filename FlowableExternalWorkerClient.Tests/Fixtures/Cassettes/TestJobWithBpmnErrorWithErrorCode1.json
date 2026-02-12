@@ -1,0 +1,257 @@
+[
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/process-api/repository/deployments",
+    "statusCode": 201,
+    "responseBody": "eyJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9yZXBvc2l0b3J5L2RlcGxveW1lbnRzL1BSQy0zZmU4NmVjYS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJjYXRlZ29yeSI6bnVsbCwiZGVwbG95bWVudFRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ4LjA1NVoiLCJpZCI6IlBSQy0zZmU4NmVjYS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJuYW1lIjoid2l0aEJvdW5kYXJ5RXZlbnQiLCJwYXJlbnREZXBsb3ltZW50SWQiOiJQUkMtM2ZlODZlY2EtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwidGVuYW50SWQiOiIifQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "Set-Cookie": [
+        "XSRF-TOKEN=709771cb-ba72-4410-ad51-ce4a94039c49; Path=/flowable-work"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "uri": "http://localhost:8090/flowable-work/process-api/repository/process-definitions?deploymentId=PRC-3fe86eca-0763-11f1-917b-2edfee439de1",
+    "statusCode": 200,
+    "responseBody": "eyJkYXRhIjpbeyJjYXRlZ29yeSI6Imh0dHA6Ly9mbG93YWJsZS5vcmcvdGVzdCIsImRlcGxveW1lbnRJZCI6IlBSQy0zZmU4NmVjYS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJkZXBsb3ltZW50VXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvcmVwb3NpdG9yeS9kZXBsb3ltZW50cy9QUkMtM2ZlODZlY2EtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiZGVzY3JpcHRpb24iOm51bGwsImRpYWdyYW1SZXNvdXJjZSI6bnVsbCwiZ3JhcGhpY2FsTm90YXRpb25EZWZpbmVkIjp0cnVlLCJpZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJrZXkiOiJleHRlcm5hbFdvcmtlclByb2Nlc3MiLCJuYW1lIjoiRXh0ZXJuYWwgV29ya2VyIFByb2Nlc3MiLCJyZXNvdXJjZSI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvZGVwbG95bWVudHMvUFJDLTNmZTg2ZWNhLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMS9yZXNvdXJjZXMvd2l0aEJvdW5kYXJ5RXZlbnQuYnBtbiIsInN0YXJ0Rm9ybURlZmluZWQiOmZhbHNlLCJzdXNwZW5kZWQiOmZhbHNlLCJ0ZW5hbnRJZCI6IiIsInVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwidmVyc2lvbiI6M31dLCJvcmRlciI6ImFzYyIsInNpemUiOjEsInNvcnQiOiJuYW1lIiwic3RhcnQiOjAsInRvdGFsIjoxfQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/process-api/runtime/process-instances",
+    "statusCode": 201,
+    "responseBody": "eyJhY3Rpdml0eUlkIjpudWxsLCJidXNpbmVzc0tleSI6bnVsbCwiYnVzaW5lc3NTdGF0dXMiOm51bGwsImNhbGxiYWNrSWQiOm51bGwsImNhbGxiYWNrVHlwZSI6bnVsbCwiY29tcGxldGVkIjpmYWxzZSwiZW5kZWQiOmZhbHNlLCJpZCI6IlBSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJuYW1lIjpudWxsLCJwcm9jZXNzRGVmaW5pdGlvbkRlc2NyaXB0aW9uIjpudWxsLCJwcm9jZXNzRGVmaW5pdGlvbklkIjoiUFJDLWV4dGVybmFsV29ya2VyUHJvY2VzczozOjNmZWExYzdjLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb2Nlc3NEZWZpbml0aW9uTmFtZSI6IkV4dGVybmFsIFdvcmtlciBQcm9jZXNzIiwicHJvY2Vzc0RlZmluaXRpb25VcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9yZXBvc2l0b3J5L3Byb2Nlc3MtZGVmaW5pdGlvbnMvUFJDLWV4dGVybmFsV29ya2VyUHJvY2VzczozOjNmZWExYzdjLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb3BhZ2F0ZWRTdGFnZUluc3RhbmNlSWQiOm51bGwsInJlZmVyZW5jZUlkIjpudWxsLCJyZWZlcmVuY2VUeXBlIjpudWxsLCJzdGFydFRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ4LjIzM1oiLCJzdGFydFVzZXJJZCI6ImFkbWluIiwic3VwZXJQcm9jZXNzSW5zdGFuY2VJZCI6bnVsbCwic3VzcGVuZGVkIjpmYWxzZSwidGVuYW50SWQiOiIiLCJ1cmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9ydW50aW1lL3Byb2Nlc3MtaW5zdGFuY2VzL1BSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJ2YXJpYWJsZXMiOlt7Im5hbWUiOiJpbml0aWF0b3IiLCJzY29wZSI6ImxvY2FsIiwidHlwZSI6InN0cmluZyIsInZhbHVlIjoiYWRtaW4ifV19",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/external-job-api/acquire/jobs",
+    "statusCode": 200,
+    "responseBody": "W3siY29ycmVsYXRpb25JZCI6IjQwMDRkMDdiLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImNyZWF0ZVRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ4LjI0MVoiLCJkdWVEYXRlIjpudWxsLCJlbGVtZW50SWQiOiJicG1uVGFza18zIiwiZWxlbWVudE5hbWUiOiJFeHRlcm5hbCBXb3JrZXIgdGFzayIsImV4Y2VwdGlvbk1lc3NhZ2UiOm51bGwsImV4ZWN1dGlvbklkIjoiUFJDLTQwMDNiZjAxLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImlkIjoiSk9CLTQwMDRkMDdjLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImxvY2tFeHBpcmF0aW9uVGltZSI6IjIwMjYtMDItMTFUMTY6MDM6NTguMzI5WiIsImxvY2tPd25lciI6InRlc3Qtd29ya2VyIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzSW5zdGFuY2VJZCI6IlBSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJyZXRyaWVzIjozLCJzY29wZURlZmluaXRpb25JZCI6bnVsbCwic2NvcGVJZCI6bnVsbCwic2NvcGVUeXBlIjpudWxsLCJzdWJTY29wZUlkIjpudWxsLCJ0ZW5hbnRJZCI6IiIsInVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL2V4dGVybmFsLWpvYi1hcGkvam9icy9KT0ItNDAwNGQwN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwidmFyaWFibGVzIjpbeyJuYW1lIjoiaW5pdGlhdG9yIiwidHlwZSI6InN0cmluZyIsInZhbHVlIjoiYWRtaW4ifV19XQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "uri": "http://localhost:8090/flowable-work/external-job-api/acquire/jobs/JOB-4004d07c-0763-11f1-917b-2edfee439de1/bpmnError",
+    "statusCode": 204,
+    "responseBody": "",
+    "responseContentType": null,
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "uri": "http://localhost:8090/flowable-work/process-api/history/historic-variable-instances?processInstanceId=PRC-400397ee-0763-11f1-917b-2edfee439de1\u0026variableName=testVar",
+    "statusCode": 200,
+    "responseBody": "eyJkYXRhIjpbeyJleGVjdXRpb25JZCI6IlBSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJpZCI6IlZBUi00MDIyZGZkMC0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzSW5zdGFuY2VJZCI6IlBSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzSW5zdGFuY2VVcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9oaXN0b3J5L2hpc3RvcmljLXByb2Nlc3MtaW5zdGFuY2VzL1BSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJ0YXNrSWQiOm51bGwsInZhcmlhYmxlIjp7Im5hbWUiOiJ0ZXN0VmFyIiwic2NvcGUiOiJnbG9iYWwiLCJ0eXBlIjoic3RyaW5nIiwidmFsdWUiOiJ0ZXN0IGZhaWx1cmUifX1dLCJvcmRlciI6ImFzYyIsInNpemUiOjEsInNvcnQiOiJ2YXJpYWJsZU5hbWUiLCJzdGFydCI6MCwidG90YWwiOjF9",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "uri": "http://localhost:8090/flowable-work/process-api/history/historic-activity-instances?processInstanceId=PRC-400397ee-0763-11f1-917b-2edfee439de1",
+    "statusCode": 200,
+    "responseBody": "eyJkYXRhIjpbeyJhY3Rpdml0eUlkIjoic3RhcnRub25lZXZlbnQxIiwiYWN0aXZpdHlOYW1lIjpudWxsLCJhY3Rpdml0eVR5cGUiOiJzdGFydEV2ZW50IiwiYXNzaWduZWUiOm51bGwsImNhbGxlZFByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJkdXJhdGlvbkluTWlsbGlzIjo0LCJlbmRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC4yMzhaIiwiZXhlY3V0aW9uSWQiOiJQUkMtNDAwM2JmMDEtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiaWQiOiJQUkMtNDAwM2JmMDItMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvblVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlSWQiOiJQUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvaGlzdG9yeS9oaXN0b3JpYy1wcm9jZXNzLWluc3RhbmNlcy9QUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwic3RhcnRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC4yMzRaIiwidGFza0lkIjpudWxsLCJ0ZW5hbnRJZCI6IiJ9LHsiYWN0aXZpdHlJZCI6ImJwbW5TZXF1ZW5jZUZsb3dfMiIsImFjdGl2aXR5TmFtZSI6bnVsbCwiYWN0aXZpdHlUeXBlIjoic2VxdWVuY2VGbG93IiwiYXNzaWduZWUiOm51bGwsImNhbGxlZFByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJkdXJhdGlvbkluTWlsbGlzIjowLCJlbmRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC4yMzhaIiwiZXhlY3V0aW9uSWQiOiJQUkMtNDAwM2JmMDEtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiaWQiOiJQUkMtNDAwNDViNDUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvblVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlSWQiOiJQUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvaGlzdG9yeS9oaXN0b3JpYy1wcm9jZXNzLWluc3RhbmNlcy9QUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwic3RhcnRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC4yMzhaIiwidGFza0lkIjpudWxsLCJ0ZW5hbnRJZCI6IiJ9LHsiYWN0aXZpdHlJZCI6ImJwbW5UYXNrXzMiLCJhY3Rpdml0eU5hbWUiOiJFeHRlcm5hbCBXb3JrZXIgdGFzayIsImFjdGl2aXR5VHlwZSI6ImV4dGVybmFsV29ya2VyU2VydmljZVRhc2siLCJhc3NpZ25lZSI6bnVsbCwiY2FsbGVkUHJvY2Vzc0luc3RhbmNlSWQiOm51bGwsImR1cmF0aW9uSW5NaWxsaXMiOjIwMiwiZW5kVGltZSI6IjIwMjYtMDItMTFUMTY6MDM6NDguNDQyWiIsImV4ZWN1dGlvbklkIjoiUFJDLTQwMDNiZjAxLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsImlkIjoiUFJDLTQwMDRhOTY2LTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb2Nlc3NEZWZpbml0aW9uSWQiOiJQUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25VcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9yZXBvc2l0b3J5L3Byb2Nlc3MtZGVmaW5pdGlvbnMvUFJDLWV4dGVybmFsV29ya2VyUHJvY2VzczozOjNmZWExYzdjLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb2Nlc3NJbnN0YW5jZUlkIjoiUFJDLTQwMDM5N2VlLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb2Nlc3NJbnN0YW5jZVVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL2hpc3RvcnkvaGlzdG9yaWMtcHJvY2Vzcy1pbnN0YW5jZXMvUFJDLTQwMDM5N2VlLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInN0YXJ0VGltZSI6IjIwMjYtMDItMTFUMTY6MDM6NDguMjQwWiIsInRhc2tJZCI6bnVsbCwidGVuYW50SWQiOiIifSx7ImFjdGl2aXR5SWQiOiJicG1uQm91bmRhcnlFdmVudF8zIiwiYWN0aXZpdHlOYW1lIjpudWxsLCJhY3Rpdml0eVR5cGUiOiJib3VuZGFyeUV2ZW50IiwiYXNzaWduZWUiOm51bGwsImNhbGxlZFByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJkdXJhdGlvbkluTWlsbGlzIjoyMDQsImVuZFRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ4LjQ0NVoiLCJleGVjdXRpb25JZCI6IlBSQy00MDA0ZDA3Ny0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJpZCI6IlBSQy00MDA0ZDA3OC0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvbklkIjoiUFJDLWV4dGVybmFsV29ya2VyUHJvY2VzczozOjNmZWExYzdjLTA3NjMtMTFmMS05MTdiLTJlZGZlZTQzOWRlMSIsInByb2Nlc3NEZWZpbml0aW9uVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvcmVwb3NpdG9yeS9wcm9jZXNzLWRlZmluaXRpb25zL1BSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzSW5zdGFuY2VJZCI6IlBSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzSW5zdGFuY2VVcmwiOiJodHRwOi8vbG9jYWxob3N0OjgwOTAvZmxvd2FibGUtd29yay9wcm9jZXNzLWFwaS9oaXN0b3J5L2hpc3RvcmljLXByb2Nlc3MtaW5zdGFuY2VzL1BSQy00MDAzOTdlZS0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJzdGFydFRpbWUiOiIyMDI2LTAyLTExVDE2OjAzOjQ4LjI0MVoiLCJ0YXNrSWQiOm51bGwsInRlbmFudElkIjoiIn0seyJhY3Rpdml0eUlkIjoiYnBtbkJvdW5kYXJ5RXZlbnRfNCIsImFjdGl2aXR5TmFtZSI6bnVsbCwiYWN0aXZpdHlUeXBlIjoiYm91bmRhcnlFdmVudCIsImFzc2lnbmVlIjpudWxsLCJjYWxsZWRQcm9jZXNzSW5zdGFuY2VJZCI6bnVsbCwiZHVyYXRpb25Jbk1pbGxpcyI6MjAxLCJlbmRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC40NDJaIiwiZXhlY3V0aW9uSWQiOiJQUkMtNDAwNGQwNzktMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiaWQiOiJQUkMtNDAwNGQwN2EtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvblVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlSWQiOiJQUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvaGlzdG9yeS9oaXN0b3JpYy1wcm9jZXNzLWluc3RhbmNlcy9QUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwic3RhcnRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC4yNDFaIiwidGFza0lkIjpudWxsLCJ0ZW5hbnRJZCI6IiJ9LHsiYWN0aXZpdHlJZCI6ImJwbW5TZXF1ZW5jZUZsb3dfNiIsImFjdGl2aXR5TmFtZSI6bnVsbCwiYWN0aXZpdHlUeXBlIjoic2VxdWVuY2VGbG93IiwiYXNzaWduZWUiOm51bGwsImNhbGxlZFByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJkdXJhdGlvbkluTWlsbGlzIjowLCJlbmRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC40NDVaIiwiZXhlY3V0aW9uSWQiOiJQUkMtNDAwNGQwNzctMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiaWQiOiJQUkMtNDAyM2YxNDEtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvblVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlSWQiOiJQUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvaGlzdG9yeS9oaXN0b3JpYy1wcm9jZXNzLWluc3RhbmNlcy9QUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwic3RhcnRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC40NDVaIiwidGFza0lkIjpudWxsLCJ0ZW5hbnRJZCI6IiJ9LHsiYWN0aXZpdHlJZCI6ImJwbW5FbmRFdmVudF81IiwiYWN0aXZpdHlOYW1lIjoiRmFpbGVkIHdpdGggZXJyb3JDb2RlMSIsImFjdGl2aXR5VHlwZSI6ImVuZEV2ZW50IiwiYXNzaWduZWUiOm51bGwsImNhbGxlZFByb2Nlc3NJbnN0YW5jZUlkIjpudWxsLCJkdXJhdGlvbkluTWlsbGlzIjowLCJlbmRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC40NDZaIiwiZXhlY3V0aW9uSWQiOiJQUkMtNDAwNGQwNzctMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwiaWQiOiJQUkMtNDAyNDE4NTItMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0RlZmluaXRpb25JZCI6IlBSQy1leHRlcm5hbFdvcmtlclByb2Nlc3M6MzozZmVhMWM3Yy0wNzYzLTExZjEtOTE3Yi0yZWRmZWU0MzlkZTEiLCJwcm9jZXNzRGVmaW5pdGlvblVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA5MC9mbG93YWJsZS13b3JrL3Byb2Nlc3MtYXBpL3JlcG9zaXRvcnkvcHJvY2Vzcy1kZWZpbml0aW9ucy9QUkMtZXh0ZXJuYWxXb3JrZXJQcm9jZXNzOjM6M2ZlYTFjN2MtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlSWQiOiJQUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwicHJvY2Vzc0luc3RhbmNlVXJsIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2Zsb3dhYmxlLXdvcmsvcHJvY2Vzcy1hcGkvaGlzdG9yeS9oaXN0b3JpYy1wcm9jZXNzLWluc3RhbmNlcy9QUkMtNDAwMzk3ZWUtMDc2My0xMWYxLTkxN2ItMmVkZmVlNDM5ZGUxIiwic3RhcnRUaW1lIjoiMjAyNi0wMi0xMVQxNjowMzo0OC40NDZaIiwidGFza0lkIjpudWxsLCJ0ZW5hbnRJZCI6IiJ9XSwib3JkZXIiOiJhc2MiLCJzaXplIjo3LCJzb3J0Ijoic3RhcnRUaW1lIiwic3RhcnQiOjAsInRvdGFsIjo3fQ==",
+    "responseContentType": "application/json",
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Vary": [
+        "accept-encoding"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  },
+  {
+    "method": "DELETE",
+    "uri": "http://localhost:8090/flowable-work/process-api/repository/deployments/PRC-3fe86eca-0763-11f1-917b-2edfee439de1",
+    "statusCode": 204,
+    "responseBody": "",
+    "responseContentType": null,
+    "responseHeaders": {
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "X-XSS-Protection": [
+        "0"
+      ],
+      "Cache-Control": [
+        "no-store, must-revalidate, no-cache, max-age=0"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "X-Frame-Options": [
+        "SAMEORIGIN"
+      ],
+      "Date": [
+        "Wed, 11 Feb 2026 16:03:48 GMT"
+      ]
+    }
+  }
+]
