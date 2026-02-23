@@ -37,12 +37,18 @@ The usage with Flowable Cloud is simpler, since everything is pre-configured.
 However, it's required to either use the user credentials or to pre-configure a personal access token.
 
 ```csharp
+using System.Net.Http.Headers;
+using FlowableExternalWorkerClient.Client;
+using FlowableExternalWorkerClient.Rest;
+
 var auth = new AuthenticationHeaderValue("Bearer", "<personal-access-token>");
 
 var externalWorkerClient = new ExternalWorkerClient(authentication: auth);
 var subscription = externalWorkerClient.Subscribe("myTopic", new HandleJobs());
 
-// ...
+// Keep the application running
+Console.WriteLine("Waiting for external worker jobs. Press Enter to exit...");
+Console.ReadLine();
 
 class HandleJobs : IExternalWorkerCallbackHandler
 {
@@ -52,6 +58,36 @@ class HandleJobs : IExternalWorkerCallbackHandler
         return work
             .Success()
             .Variable("testVar", "Hello from C#");
+    }
+}
+```
+
+### Local
+
+The following is an example how you can connect to a Flowable instance running at `http://localhost:8090` and process all messages retrieved on the topic `myTopic`:
+
+```csharp
+using System.Net.Http.Headers;
+using System.Text;
+using FlowableExternalWorkerClient.Client;
+using FlowableExternalWorkerClient.Rest;
+
+var auth = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.UTF8.GetBytes("admin:test")));
+
+var externalWorkerClient = new ExternalWorkerClient(flowableHost: "http://localhost:8090/flowable-work", authentication: auth);
+var subscription = externalWorkerClient.Subscribe("myTopic", new HandleJobs());
+
+// Keep the application running
+Console.WriteLine("Waiting for external worker jobs. Press Enter to exit...");
+Console.ReadLine();
+
+class HandleJobs : IExternalWorkerCallbackHandler
+{
+    public IWorkResult Handle(ExternalWorkerAcquireJobResponse job, IWorkResultBuilder work)
+    {
+        Console.WriteLine("Handle job: " + job.Id);
+        return work
+            .Success();
     }
 }
 ```
